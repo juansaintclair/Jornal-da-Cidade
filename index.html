@@ -1,0 +1,2549 @@
+<?php /** * @package Cattive.Site * @subpackage Templates.cattive * * @copyright Copyright (C) 2015, Inc. All rights reserved. * @license GNU General Public License version 2 or later; see LICENSE.txt */ ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jornal da Cidade</title>
+
+    <!-- Informação para navegadores antigos -->
+    <!--[if lte IE 8]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<noscript>
+		<strong>Atenção!</strong>
+		Utilize um navegador mais recente para continuar navegando.
+	</noscript>
+	<![endif]-->
+    <!-- Disable image toolbar in IE6 -->
+    <!--[if lte IE 6]><meta http-equiv="imagetoolbar" content="no" /><![endif]-->
+
+    <!-- Inclusão dos Estilos -->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Estilo da página -->
+    <link rel="stylesheet" href="css/estilo.css">
+    <!-- link -->
+    <link href="css/pace-theme-minimal.css" rel="stylesheet" />
+
+
+</head>
+
+<body>
+
+    <div class="wrap bg-top padding-top-20">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-xs-2 hidden-md hidden-lg">
+                    <div id="custom-bootstrap-menu" class="navbar navbar-default" role="navigation">
+                        <div class="navbar-header navbar-mobile-position">
+                            <button type="button" class="navbar-toggle collapsed margin-top-15" data-toggle="collapse" data-target="#abrir-menu-principal">
+                                <span class="sr-only">Abrir Navegação</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-xs-8 col-md-4 margin-top-20">
+                    <img src="images/logo-jornal-da-cidade.svg" alt="Logo Jornal da Cidade" class="img-responsive">
+                </div>
+
+                <div class="btn-search col-xs-2 text-center hidden-md hidden-lg margin-top-25" data-toggle="collapse" data-target="#abrir-busca">
+                    <a class="" href="#"><img src="images/btn-search.png"></a>
+                </div>
+
+
+                <div class="col-md-offset-1 col-md-2 margin-top-20 padding-left-0 hidden-xs hidden-sm">
+                    <img src="images/img-oferecimento.jpg" class="img-responsive pull-right">
+                </div>
+
+                <div class="col-sm-4 col-md-4 margin-top-20 padding-right-60 padding-left-0 hidden-xs hidden-sm">
+                    <div class="form-group form-group-sm">
+
+                        <div class="form-group has-feedback">
+                            <input type="text" class="form-control input-search" placeholder="Faça uma busca">
+                            <span class="fa fa-search form-control-feedback cinza-search"></span>
+                        </div>
+
+                    </div>
+
+
+                    <div class="col-md-1 miniatura-capa hidden-xs hidden-sm">
+                        <img src="images/capa-thumb.png" alt="Miniatura da Capa - Jornal da Cidade">
+                    </div>
+
+
+
+                </div>
+            </div>
+        </div>
+
+
+
+        <nav class="navbar nav-padrao margin-top-30">
+
+
+            <div id="custom-bootstrap-menu" class="navbar navbar-default " role="navigation">
+                <div class="container">
+
+                    <div id="abrir-busca" class="collapse navbar-collapse">
+
+                        <div id="input-search-align" class="form-group has-feedback nav navbar-nav hidden-md hidden-lg">
+                            <input type="text" class="form-control" placeholder="Faça uma busca">
+                            <span class="fa fa-search form-control-feedback cinza-search"></span>
+                        </div>
+
+                    </div>
+
+                    <div id="abrir-menu-principal" class="collapse navbar-collapse">
+                        <ul class="nav navbar-nav navbar-left menu-principal">
+                            <li>
+                                <a href="/home">Página Inicial</a>
+                            </li>
+                            <li>
+                                <a href="/colunas">Colunas</a>
+                            </li>
+                            <li>
+                                <a href="/cultura">Cultura</a>
+                            </li>
+                            <li>
+                                <a href="/educacao">Educação</a>
+                            </li>
+                            <li>
+                                <a href="/imoveis">Imóveis</a>
+                            </li>
+                            <li>
+                                <a href="/esportes">Esportes</a>
+                            </li>
+                            <li>
+                                <a href="/obras">Obras</a>
+                            </li>
+                            <li>
+                                <a href="/policia">Polícia</a>
+                            </li>
+                            <li>
+                                <a href="/politica">Política</a>
+                            </li>
+                            <li>
+                                <a href="/saude">Saúde</a>
+                            </li>
+                            <li>
+                                <a href="/social">Social</a>
+                            </li>
+                            <li>
+                                <a href="/variedades">Variedades</a>
+                            </li>
+
+                        </ul>
+
+                        <ul id="btn-social-media-menu" class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                            <li><a href="#"><i class="fa fa-twitter fa-lg"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-facebook fa-lg"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-google-plus fa-lg"></i></a>
+                            </li>
+                            <li><a href="#"><i class="fa fa-rss fa-lg"></i></a>
+                            </li>
+                        </ul>
+
+
+
+                    </div>
+
+
+                    <div id="sub-menu-show">
+                        <div class="row">
+                            <div class="arrow-up"></div>
+                            <div class="arrow-up-border"></div>
+
+                            <!--  começo info jornal miniatura capa -->
+                            <div class="info-jornal-miniatura-capa">
+                                <div class="col-sm-6 jornal-info-capa">
+                                    <img src="images/capa-full.png" alt="">
+                                </div>
+
+                                <div class="col-sm-6 jornal-info-txt">
+
+                                    <img src="images/logo-jornal-da-cidade.svg" alt="">
+                                    <p>
+                                        Publicação da Empresa JAgência Impacto Ltda. ME
+                                        <br /> CNPJ: 00 000 000/0000-00 Inscrição Municipal: 000000-0
+                                        <br /> Jornalistas Responsáveis/Editores: Aaaaaaa Aaaaaaaaaa
+                                        <br /> Departamento Jurídico: Dr. Aaaaaaa Aaaaa - OAB 00000/SP
+                                        <br />
+                                        <br /> e-mail: <a href="#">contato@jornaldacidadeeregiao.com.br</a>
+                                        <br /> telefone: 11 0000-0000
+                                        <br /> Redação, publicidade e administração:
+                                        <br /> [Endereço completo aqui]
+                                        <br />
+                                        <br /> Matérias assinadas não correspondem, necessariamente,
+                                        <br /> à opinião dos editores deste veículo de comunicação
+                                        <br />
+                                        <a href="#">Confira nossa Política de Segurança e Privacidade  </a>
+                                    </p>
+                                </div>
+
+                            </div>
+
+                            <!-- Inicio Menu Colunas -->
+                            <div id="menu-colunas" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Colunas</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Colunas -->
+
+
+                            <!-- Inicio Cultura -->
+                            <div id="menu-cultura" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Cultura</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Cultura -->
+
+                            <!-- Inicio Educação -->
+                            <div id="menu-educacao" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Educação</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Educação -->
+
+
+                            <!-- Inicio Menu Imoveis -->
+                            <div id="menu-imoveis" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Imoveis</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Imoveis -->
+
+                            <!-- Inicio Cultura -->
+                            <div id="menu-esportes" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Esportes</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-esportes -->
+
+                            <!-- Inicio Obras -->
+                            <div id="menu-obras" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Obras</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Obras -->
+
+
+                            <!-- Inicio Obras -->
+                            <div id="menu-obras" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Cultura</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Obras -->
+
+
+                            <!-- Inicio Policia -->
+                            <div id="menu-policia" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Polícia</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Policia -->
+
+                            <!-- Inicio Politica -->
+                            <div id="menu-politica" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Política</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Politica -->
+
+
+                            <!-- Inicio Saúde -->
+                            <div id="menu-saude" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Saúde</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Saude -->
+
+
+                            <!-- Inicio Social -->
+                            <div id="menu-social" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Social</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Social -->
+
+
+
+                            <!-- Inicio Variedades -->
+                            <div id="menu-variedades" class="padding-menu-show">
+                                <div class="row">
+                                    <div class="col-sm-3">
+                                        <div class="titulo-sessao-submenu">
+
+                                            <p>Variedades</p>
+
+                                            <ul>
+                                                <li> <a href="#" class="">Cinema</a> </li>
+                                                <li> <a href="#" class="">Curso</a> </li>
+                                                <li> <a href="#" class="">Exposição</a> </li>
+                                                <li> <a href="#" class="">Hip Hop</a> </li>
+                                                <li> <a href="#" class="">Infantil</a> </li>
+                                                <li> <a href="#" class="">Música</a> </li>
+                                            </ul>
+
+                                        </div>
+                                        <div class="">
+                                            <hr class="hr-pre-publicidade margin-top-40" />
+
+                                            <div class="puclididade-col">
+                                                <p class="publicidade-titulo align-center-mobile">publicidade
+                                                    <img src="images/publicidade/publicidade-ford.jpg" alt="Publicidade" class="img-responsive col-centered">
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-5">
+                                        <div class="destaque">
+
+                                            <p class="noticia-titulo-sessao">
+                                                <a href="#">Cinema</a>
+                                            </p>
+                                            <a href="#">
+                                                <img id="centro" src="images/img-noticias/hora-aventura.png" alt="Longa-metragem animado será supervisionado por Chris McKay e Roy Lee.
+                                                Lançamento está previsto para 2017." class="img-responsive">
+                                            </a>
+
+
+                                            <p class="destaque-titulo padding-top-10">
+                                                <a href="#">Hora de Aventura vai virar filme </a>
+                                            </p>
+
+
+                                            <p class="txt-destaque">
+                                                <a href="#">
+                                                    Longa-metragem animado será supervisionado por Chris McKay e Roy Lee. Lançamento está previsto para 2017.
+                                                </a>
+                                            </p>
+
+                                        </div>
+                                    </div>
+
+                                    <div class="col-sm-4">
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+                                        <hr />
+
+                                        <div class="chamada-noticia">
+
+                                            <div class="media">
+                                                <a href="#">
+                                                    <div class="media-left">
+                                                        <img class="media-object" src="images/img-noticias/spock.png" alt="O futuro da sua cidade pode ser mais verde">
+                                                    </div>
+                                                    <div class="media-body">
+                                                        <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                                                    </div>
+                                                </a>
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+                                </div>
+
+                                <hr class="hr-pre-publicidade" />
+
+                                <div class="ver-todas-noticias">
+                                    <p>ver todas as notícias relacionadas a <a href="#">Cultura</a>
+                                    </p>
+                                </div>
+
+                            </div> <!-- Fim #Menu-Variedades -->
+
+
+
+                        </div>
+                    </div>
+                    <!-- sub menu show -->
+
+                </div>
+            </div>
+
+        </div>
+    </nav>
+
+</div>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-4 noticias-col-esquerda">
+            <div class="destaque">
+
+                <p class="noticia-titulo-sessao">
+                    <a href="#">Saúde</a>
+                </p>
+
+                <a href="#" class="link-noticia-inferior">
+                   <div class="ativar-shadow">
+                       <img src="images/img-noticias/banho-de-sol-2.jpg" alt="Veja o primeiro trailer de X-Men - Dias de um Futuro Esquecido" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10 margin-top-menos-5">
+                   </div>
+
+                   <p class="destaque-titulo">Banho de sol no combate de algumas doenças infantis </p>
+
+               </a>     
+           </div>
+
+           <hr />
+
+
+           <div class="chamada-noticia">
+
+            <div class="media">
+                <a href="#">
+                    <div class="media-left">
+
+                        <img class="media-object" src="images/img-noticias/selfie-oscar.jpg" alt="App te ajuda a fazer um 'selfie' de qualidade">
+
+                    </div>
+                    <div class="media-body">
+                        <h4 class="media-heading">App te ajuda a fazer um "selfie" de qualidade</h4>
+                    </div>
+                </a>
+            </div>
+
+        </div>
+
+
+        <hr />
+
+        <div class="chamada-noticia">
+
+            <p class="titulo-noticia">
+                <a href="#">
+                 Não tem espaço? Veja como substituir a mesa de jantar
+                 <ul class="li-espacamento">
+                    <li>Mostra traz inspirações para quartos</li>                                   
+                </ul>
+            </a>
+        </p>
+
+
+    </div>
+
+    <hr class="hr-pre-publicidade" />
+
+    <div class="puclididade-col">
+        <p class="publicidade-titulo align-center-mobile">publicidade
+            <img src="images/publicidade/publicidade-net.jpg" alt="Publicidade" class="img-responsive col-centered">
+        </p>
+    </div>
+
+</div>
+
+<div id="col-meio" class="col-sm-4 padding-top-20-mobile">
+    <div class="chamada-noticia">
+
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img class="media-object" src="images/img-noticias/o-futuro-da-sua-cidade.jpg" alt="O futuro da sua cidade pode ser mais verde">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="chamada-noticia">
+
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img class="media-object" src="images/img-noticias/o-futuro-da-sua-cidade.jpg" alt="O futuro da sua cidade pode ser mais verde">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="chamada-noticia">
+
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img class="media-object" src="images/img-noticias/o-futuro-da-sua-cidade.jpg" alt="O futuro da sua cidade pode ser mais verde">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="chamada-noticia">
+
+        <div class="media">
+            <a href="#">
+                <div class="media-left">
+                    <img class="media-object" src="images/img-noticias/o-futuro-da-sua-cidade.jpg" alt="O futuro da sua cidade pode ser mais verde">
+                </div>
+                <div class="media-body">
+                    <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <hr />
+
+    <div class="destaque">
+        <div class="kiora">
+            <img src="images/kiora.png" alt="" id="centro" class="img-responsive">
+        </div>
+
+        <p class="noticia-titulo-sessao"><a href="#">Viagem</a>
+        </p>
+
+
+        <a class="link-noticia-inferior" href="#">
+            <img src="images/img-noticias/viagens.jpg" alt="Veja o primeiro trailer de X-Men - Dias de um Futuro Esquecido" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10 margin-top-menos-5"> <p class="destaque-titulo">Os melhores recantos do estado de Alagoas</p> </a>
+
+        </div>
+
+    </div>
+
+    <div id="col-direita" class="col-sm-4 padding-top-20-mobile">
+
+        <div class="puclididade-col">
+            <p class="publicidade-titulo align-center-mobile">publicidade
+                <img src="images/publicidade/publicidade-netshoes.jpg" alt="Publicidade" id="centro" class="img-responsive">
+            </p>
+        </div>
+
+        <div class="btn-twitter margin-top-10">
+            <a class="btn hidden-sm" href="#">
+                <i class="fa fa-twitter fa-lg "></i> Siga o Jornal da Cidade e Região no Twitter
+            </a>
+
+            <a class="btn hidden-xs hidden-md hidden-lg" href="#">
+                <i class="fa fa-twitter fa-lg "></i> Siga-nos no Twitter
+            </a>
+
+        </div>
+
+        <hr />
+
+        <div class="destaque">
+
+
+            <p class="noticia-titulo-sessao"><a href="#">Variedades </a></p>
+
+            <a class="link-noticia-inferior" href="#">
+                <img src="images/img-noticias/bruna.jpg" alt="Veja o primeiro trailer de X-Men - Dias de um Futuro Esquecido" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10 margin-top-menos-5"> <p>Loiraça, Bruna Marquezine posa super decotada em ensaio</p> </a>
+
+
+
+                <hr />
+
+            </div>
+
+
+
+            <div class="chamada-noticia col-xs-12">
+                <div class="row">
+                    <div class="media">
+                        <a href="#">
+                            <div class="media-left">
+                                <img class="media-object" src="images/img-noticias/o-futuro-da-sua-cidade.jpg" alt="O futuro da sua cidade pode ser mais verde">
+                            </div>
+                            <div class="media-body">
+                                <h4 class="media-heading">O futuro da sua cidade pode ser mais verde</h4>
+                            </div>
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+    <div id="container-publicidade-meio" class="row margin-top-30 hidden-xs hidden-sm">
+        <div class="puclididade-col publicidade-meio">
+            <img src="images/publicidade/publicidadegrande.jpg" alt="Publicidade" class="img-responsive">
+            <p class="publicidade-titulo">publicidade</p>
+        </div>
+    </div>
+
+    <div id="noticias-inferiores" class="row margin-top-30">
+        <div id="col-inferior-esquerda" class="col-sm-8 padding-right-30 hidden-xs">
+            <hr/>
+            <div class="row">
+                <div id="cabecalho-noticias-inferiores">
+                    <div id="titulo-sessao-noticias-inferiores" class="col-sm-3">
+                        <a href="#">Cultura</a>
+                    </div>
+                    <div id="links-sessao" class="col-sm-9">
+                        <div class="bottom_aligner"></div>
+                        <ul>
+                            <li><a href="#">cinema</a>
+                            </li>
+                            <li><a href="#">culinária</a>
+                            </li>
+                            <li><a href="#">games</a>
+                            </li>
+                            <li><a href="#">beleza & estilo</a>
+                            </li>
+                            <li><a href="#">música</a>
+                            </li>
+                            <li><a href="#">teatro</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row margin-top-15">
+                <div id="noticia-inferior" class="col-sm-4">
+
+                    <a class="link-sessao-noticia-inferior" href="#">Games</a>
+
+                    <a class="link-noticia-inferior" href="#">
+                        <img src="images/img-noticias/titalfall.jpg" alt="Veja o primeiro trailer de X-Men - Dias de um Futuro Esquecido" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> Veja o primeiro trailer de X-Men - Dias de um Futuro Esquecido </a>
+                    </div>
+
+                    <div id="noticia-inferior" class="col-sm-4">
+                        <a class="link-sessao-noticia-inferior" href="#">Games</a>
+                        <a class="link-noticia-inferior" href="#">
+                            <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> 'Titanfall' é o melhor game de tiro da atualidade</a>
+                        </div>
+
+                        <div id="noticia-inferior" class="col-sm-4">
+                            <a class="link-sessao-noticia-inferior" href="#">Games</a>
+                            <a class="link-noticia-inferior" href="#">
+                                <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> 'Titanfall' é o melhor game de tiro da atualidade</a>
+                            </div>
+
+                        </div>
+
+                        <hr class="margin-top-30" />
+
+                        <div class="row">
+                            <div id="cabecalho-noticias-inferiores">
+                                <div id="titulo-sessao-noticias-inferiores" class="col-sm-3">
+                                    <a href="#">Cultura</a>
+                                </div>
+                                <div id="links-sessao" class="col-sm-9">
+                                    <div class="bottom_aligner"></div>
+                                    <ul>
+                                        <li><a href="#">cinema</a>
+                                        </li>
+                                        <li><a href="#">culinária</a>
+                                        </li>
+                                        <li><a href="#">games</a>
+                                        </li>
+                                        <li><a href="#">beleza & estilo</a>
+                                        </li>
+                                        <li><a href="#">música</a>
+                                        </li>
+                                        <li><a href="#">teatro</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row margin-top-15">
+                            <div id="noticia-inferior" class="col-sm-4">
+
+                                <a class="link-sessao-noticia-inferior" href="#">Games</a>
+
+                                <a class="link-noticia-inferior" href="#">
+                                    <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> Veja o primeiro trailer de X-Men - Dias de um Futuro Esquecido </a>
+                                </div>
+
+                                <div id="noticia-inferior" class="col-sm-4">
+                                    <a class="link-sessao-noticia-inferior" href="#">Games</a>
+                                    <a class="link-noticia-inferior" href="#">
+                                        <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> 'Titanfall' é o melhor game de tiro da atualidade</a>
+                                    </div>
+
+                                    <div id="noticia-inferior" class="col-sm-4">
+                                        <a class="link-sessao-noticia-inferior" href="#">Games</a>
+                                        <a class="link-noticia-inferior" href="#">
+                                            <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> 'Titanfall' é o melhor game de tiro da atualidade</a>
+                                        </div>
+                                    </div>
+
+                                    <hr class="margin-top-30" />
+
+                                    <div class="row">
+                                        <div id="cabecalho-noticias-inferiores">
+                                            <div id="titulo-sessao-noticias-inferiores" class="col-sm-3">
+                                                <a href="#">Cultura</a>
+                                            </div>
+                                            <div id="links-sessao" class="col-sm-9">
+                                                <div class="bottom_aligner"></div>
+                                                <ul>
+                                                    <li><a href="#">cinema</a>
+                                                    </li>
+                                                    <li><a href="#">culinária</a>
+                                                    </li>
+                                                    <li><a href="#">games</a>
+                                                    </li>
+                                                    <li><a href="#">beleza & estilo</a>
+                                                    </li>
+                                                    <li><a href="#">música</a>
+                                                    </li>
+                                                    <li><a href="#">teatro</a>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row margin-top-15">
+                                        <div id="noticia-inferior" class="col-sm-4">
+
+                                            <a class="link-sessao-noticia-inferior" href="#">Games</a>
+
+                                            <a class="link-noticia-inferior" href="#">
+                                                <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> 'Titanfall' é o melhor game de tiro da atualidade</a>
+                                            </div>
+
+                                            <div id="noticia-inferior" class="col-sm-4">
+                                                <a class="link-sessao-noticia-inferior" href="#">Games</a>
+                                                <a class="link-noticia-inferior" href="#">
+                                                    <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> 'Titanfall' é o melhor game de tiro da atualidade</a>
+                                                </div>
+
+                                                <div id="noticia-inferior" class="col-sm-4">
+                                                    <a class="link-sessao-noticia-inferior" href="#">Games</a>
+                                                    <a class="link-noticia-inferior" href="#">
+                                                        <img src="images/img-noticias/titalfall.jpg" alt="'Titanfall' é o melhor game de tiro da atualidade" class="img-responsive titulo-noticia margin-top-15 margin-bottom-10"> 'Titanfall' é o melhor game de tiro da atualidade</a>
+                                                    </div>
+                                                </div>
+
+                                                <hr class="margin-top-30" />
+
+                                            </div>
+                                            <!-- fim da coluna de notícias inferior/esquerda -->
+
+                                            <div id="col-inferior-direita" class="col-sm-4">
+
+                                                <div class="container-fluid">
+                                                    <div class="row puclididade-col">
+                                                        <p class="publicidade-titulo align-center-mobile">publicidade
+                                                            <img src="images/publicidade/publicidade-citroen.jpg" alt="Publicidade" id="centro" class="img-responsive">
+                                                        </p>
+                                                    </div>
+
+
+
+
+                                                    <div class="row">
+                                                        <div class="box-direita-inferior margin-top-20">
+
+                                                            <div class="row">
+                                                                <!-- refazer com bootstrap -->
+                                                                <div class="col-sm-12">
+                                                                    <p class="previsao-titulo">Previsão do Tempo</p>
+
+                                                                    <hr class="previsao-hr" />
+                                                                </div>
+                                                                <div class="row">
+                                                                    <div class="col-sm-6">
+                                                                        <div class="previsao-texto margin-left-15">
+                                                                            <p class="previsao-cidade">São Paulo, SP</p>
+                                                                            <p class="previsao-clima">Sol</p>
+                                                                            <p class="previsao-humidade">Humidade: 76%</p>
+                                                                            <p class="previsao-vento">Vento: 5 a 6 KM/H</p>
+                                                                        </div>
+                                                                    </div>
+
+
+                                                                    <div class="col-sm-6">
+                                                                        <div class="previsao-imagem-clima-posicao">
+                                                                            <div class="previsao-imagem-clima-sol"></div>
+                                                                            <p class="previsao-temperatura">25º</p>
+                                                                        </div>
+                                                                    </div>
+
+                                                                </div>
+
+
+                                                                <div class="col-xs-offset-1 col-xs-2 previsao-bottom-texto">
+                                                                    <p>Seg</p>
+                                                                    <div class="previsao-sprite sprite-sol"></div>
+                                                                    <p>25º | 30º</p>
+                                                                </div>
+
+                                                                <div class="col-xs-2 previsao-bottom-texto">
+                                                                    <p>Seg</p>
+                                                                    <div class="previsao-sprite sprite-chuva"></div>
+                                                                    <p>25º | 30º</p>
+                                                                </div>
+
+                                                                <div class="col-xs-2 previsao-bottom-texto">
+                                                                    <p>Seg</p>
+                                                                    <div class="previsao-sprite sprite-nuvens"></div>
+                                                                    <p>25º | 30º</p>
+                                                                </div>
+
+                                                                <div class="col-xs-2 previsao-bottom-texto">
+                                                                    <p>Seg</p>
+                                                                    <div class="previsao-sprite sprite-sol-com-nuvens"></div>
+                                                                    <p>25º | 30º</p>
+                                                                </div>
+
+                                                                <div class="col-xs-2 previsao-bottom-texto">
+                                                                    <p>Seg</p>
+                                                                    <div class="previsao-sprite sprite-sol"></div>
+                                                                    <p>25º | 30º</p>
+                                                                </div>
+
+                                                                <div class="col-xs-offset-1"></div>
+
+                                                            </div>
+                            <!--
+                            <div class="fprevisao-bottom-texto margin-left-15">
+                                <p>Seg</p>
+                                <div class="previsao-sprite sprite-sol"></div>
+                                <p>25º | 30º</p>
+                            </div>
+                        -->
+                    </div>
+                    <!-- box -->
+
+                </div>
+
+                <div class="row">
+
+                    <div id="shopping" class="box-direita-inferior margin-top-20">
+
+                        <div class="row">
+
+
+                            <div class="col-xs-6 col-sm-7">
+                                <p class="shopping-titulo">Shopping</p>
+                            </div>
+                            <div class="col-xs-6 col-sm-5 shopping-mais-produtos">
+                                <a href="#"> + produtos </a>
+                            </div>
+
+                        </div>
+                        <hr class="previsao-hr" />
+                        <div class="row">
+                            <div class="cb"></div>
+
+
+                            <div class="col-sm-9 col-centered">
+                                <a class="shopping-links" href="#">
+                                    <img src="images/publicidade/shopping1.jpg" alt="Tablet Motorola Xoom c/Android 3.0 Dural Core 1GB RAM 32GB HD Wi-FI 10" class="img-responsive col-centered padding-top-20">
+
+                                    <p class="shopping-descricao margin-top-15">
+                                        Tablet Motorola Xoom c/Android 3.0 Dual Core 1GB RAM 32GB HD Wi-FI 10"
+                                    </p>
+
+                                    <p class="shopping-preco">
+                                        12x de R$ 158,25
+                                    </p>
+                                </a>
+
+                            </div>
+                        </div>
+
+                        <div class="cb"></div>
+
+
+                    </div>
+                </div>
+
+
+
+                <div class="row">
+                   <div id="boletim-semanal" class="box-direita-inferior container-fluid margin-top-20 padding-bottom-10">
+
+                    <div class="row">
+                        <div class="col-xs-7 col-sm-7">
+                            <p class="previsao-tempo-titulo">Boletim Semanal</p>
+                        </div>
+                        <div class="col-xs-5 col-sm-5 shopping-desinscrever">
+                            <a href="#"> desinscrever-se </a>
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <hr class="previsao-hr" />
+
+                        <form class="form-horizontal">
+                            <div class="form-boletim-semanal">
+                                <p>Assine nosso boletim semanal e receba nossas novidades em seu e-mail. É gratuito!</p>
+
+                                <div class="form-group padding-left-10 padding-top-7-mobile">
+                                    <label for="inputNome" class="col-xs-2 col-sm-2 control-label padding-top-10-mobile">Nome:</label>
+                                    <div class="col-xs-10 col-sm-10 form-input padding-top-5">
+                                        <input type="name" class="form-control" id="inputNome" placeholder="insira nome completo aqui">
+                                    </div>
+                                </div>
+                                <div class="form-group padding-left-10 margin-top-15-negativo">
+                                    <label for="inputEmail3" class="col-xs-2 col-sm-2 control-label padding-top-7-mobile">Email:</label>
+                                    <div class="col-xs-10 col-sm-10 form-input padding-top-5">
+                                        <input type="email" class="form-control" id="inputEmail3" placeholder="insira seu endereço de e-mail aqui">
+                                    </div>
+                                </div>
+                                <button type="submit" class="btn-assinar text-uppercase pull-right">Assinar</button>
+                            </div>
+                        </form>
+
+                    </div>
+                    <!-- fim row interna boletim semanal -->
+
+
+                </div>
+                <!-- fim boletim semanal -->
+            </div>
+            <!-- fim row boletim semanal -->
+
+        </div>
+    </div>
+    <!-- Fim col-inferior-direita -->
+
+</div>
+<!-- Fim Notícias inferiores -->
+
+</div>
+<!-- Fim container cols esquerda -->
+
+
+
+<div class="container margin-top-30 hidden-sm hidden-md hidden-lg">
+
+    <div class="row">
+        <div id="links-sessao" class="col-xs-12">
+            <p id="titulo-sessao-noticias-inferiores">Cultura</p>
+            <ul class="padding-top-10">
+                <li><a href="#">cinema</a>
+                </li>
+                <li><a href="#">culinária</a>
+                </li>
+                <li><a href="#">games</a>
+                </li>
+                <li><a href="#">beleza & estilo</a>
+                </li>
+                <li><a href="#">música</a>
+                </li>
+                <li><a href="#">teatro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row margin-top-20">
+        <div id="links-sessao" class="col-xs-12">
+            <p id="titulo-sessao-noticias-inferiores">Esportes</p>
+            <ul class="padding-top-10">
+                <li><a href="#">cinema</a>
+                </li>
+                <li><a href="#">culinária</a>
+                </li>
+                <li><a href="#">games</a>
+                </li>
+                <li><a href="#">beleza & estilo</a>
+                </li>
+                <li><a href="#">música</a>
+                </li>
+                <li><a href="#">teatro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row  margin-top-20">
+        <div id="links-sessao" class="col-xs-12">
+            <p id="titulo-sessao-noticias-inferiores">Região</p>
+            <ul class="padding-top-10">
+                <li><a href="#">cinema</a>
+                </li>
+                <li><a href="#">culinária</a>
+                </li>
+                <li><a href="#">games</a>
+                </li>
+                <li><a href="#">beleza & estilo</a>
+                </li>
+                <li><a href="#">música</a>
+                </li>
+                <li><a href="#">teatro</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="row margin-top-30">
+        <div id="menu-mobile" class="col-xs-12">
+            <ul>
+                <li><a href="#">Página Inicial</a>
+                </li>
+                <li><a href="#">Colunas</a>
+                </li>
+                <li><a href="#">Educação</a>
+                </li>
+                <li><a href="#">Imóveis</a>
+                </li>
+                <li><a href="#">Obras</a>
+                </li>
+                <li><a href="#">Polícia</a>
+                </li>
+                <li><a href="#">Política</a>
+                </li>
+                <li><a href="#">Social</a>
+                </li>
+                <li><a href="#">Variedades</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+
+<div id="footer">
+    <div class="container">
+        <div class="row footer-conteudo">
+
+            <div class="logo-footer col-sm-12 col-md-3">
+                <img src="images/logo-jornal-da-cidade-branco.svg" alt="" class="img-responsive">
+            </div>
+
+
+            <div class="col-md-4">
+                <p class="copyright">&copy; Copyright 2014, Jornal da Cidade e Região.</p>
+            </div>
+
+
+            <div class="col-md-5 footer-links">
+                <ul>
+                    <li><a href="#">política&nbsp;de&nbsp;privacidade</a>
+                    </li>
+                    <li><a href="#">anuncie&nbsp;conosco</a>
+                    </li>
+                    <li><a href="#">entre&nbsp;em&nbsp;contato</a>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Inclusão dos Scripts -->
+<!-- Jquery -->
+<script src="js/jquery-2.1.3.min.js"></script>
+<!-- Bootstrap -->
+<script src="js/bootstrap.min.js"></script>
+<!-- Regas -->
+<script src="js/regras.js"></script>
+<!-- Pace -->
+<script src="js/pace.js"></script>
+
+
+</body>
+
+</html>

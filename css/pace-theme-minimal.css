@@ -1,0 +1,32 @@
+/* This is a compiled file, you should be editing the file in the templates directory */
+
+.pace {
+    -webkit-pointer-events: none;
+    pointer-events: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+    height: 3px;
+}
+/*
+Desativado para aparecer a barra, não vou excluir caso preciso mexer mais pra frente.
+  */
+
+.pace-inactive {
+    background-color: #efa217;
+    z-index: 2100;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+}
+
+.pace .pace-progress {
+    background-color: #006699;
+    position: fixed;
+    z-index: 2000;
+    top: 0;
+    right: 100%;
+    width: 100%;
+    height: 3px;
+}
